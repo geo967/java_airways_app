@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cart_bottomSheet_id"
+    android:clickable="true"
+    android:background="#EEEDEF"
+    android:orientation="horizontal"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    android:elevation="10dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/price_in_cart_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price : 0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <Button
+        android:id="@+id/place_order_button_id"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Place Order"
+        android:background="#E80B0B"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"/>
+
+</LinearLayout>
